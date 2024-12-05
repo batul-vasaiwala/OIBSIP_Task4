@@ -1,0 +1,130 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Card */
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Heading */
+.card h1 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.input-group label {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+    display: block;
+    transition: all 0.3s;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input-group input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+}
+
+/* Links */
+.link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.link:hover {
+    color: #d4fc79;
+}
+/* Flash Messages */
+.flash-messages {
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+}
+
+.alert.error {
+    background-color: #e57373;
+}
+
+.alert.success {
+    background-color: #81c784;
+}

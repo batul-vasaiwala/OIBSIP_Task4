@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secured Page</title>
+    <link rel="stylesheet" href="/static/style2.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">My App</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/logout" class="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="card">
+                <h1>Welcome, {{ username }}!</h1>
+                <p>You have successfully logged in to a secured page.</p>
+                <p>
+                    Feel free to explore your <a href="/dashboard" class="link">dashboard</a>.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 MyApp. All rights reserved.</p>
+        <p>Developed by <strong>Batul Vasaiwala</strong></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    color: #fff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff758c;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ff758c;
+}
+
+.logout {
+    background: #ff758c;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.logout:hover {
+    background: #ff7eb3;
+    color: #fff;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 160px); /* Adjust for header and footer height */
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Card */
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.card .link {
+    color: #ff7eb3;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.card .link:hover {
+    color: #ff758c;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.footer strong {
+    color: #ff7eb3;
+}
